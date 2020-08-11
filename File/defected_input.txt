@@ -1,0 +1,19 @@
+add $s1, $s2, $s3
+add $t0, $t1, $t2
+sub $t1, $t2, $s1
+addi $s3, $t0, -5
+addi $s3, $t0, -5
+lw  $t1, 63($t2)
+sw  $t3, 100($t1)
+and $t2, $t0, $s1 
+nor $t0, $t3, $s0
+sll $t1, $s0, -8
+beq $s3, $s2, 100
+beq $s3, $s2, 3
+beq $s3, $s2, -366
+slt $t0, $s2, $s3
+or $t1, $t0, $s1
+j 10
+j -10
+din $s1
+dout $t1

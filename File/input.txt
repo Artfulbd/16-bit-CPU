@@ -1,0 +1,8 @@
+lw $t0, 1($s2)
+dout $t0
+lw $t1, 2($s2)
+dout $t1
+add $t2, $t0, $t1
+dout $t2
+sw $t2, 4($s2)
+dout $t2

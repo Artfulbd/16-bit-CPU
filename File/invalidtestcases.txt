@@ -1,0 +1,11 @@
+add $s1, $s2, s3              //invalid cause "$" sigh missing
+sub $s1, $s2, $s4             //invalid cause $s10 is not a register
+addi $s7, $t0, 80             //invalid cause value is too large
+lw  $t1, 100$t2)              //invalid cause bracket is missing and value is too large
+sw  $t3, -3($t4)              //invalid cause value is neg
+and $t5, $t6 $t7              //invalid cause "," is missing
+sll $t1, $s0, -3              //invalid cause value is neg
+sll $s1, $t2,, 79             //invalid cause value is greater then 63
+beq $s1, $s2, -36             //invalid cause value is to small
+slt  $s2, $s3                 //invalid cause rd is missing
+j 3216                        //value is too large
